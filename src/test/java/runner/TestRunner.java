@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 import java.awt.*;
 
 @CucumberOptions(
-            features = "src\\test\\resources\\Features\\Homepage.feature",
+            features = "classpath:Features",
             glue = {"StepDefinitions"},
             tags = "@tc1",
             plugin = {"pretty","html:target/cucumber-reports/cucumber.html"}
